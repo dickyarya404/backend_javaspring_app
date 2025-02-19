@@ -14,4 +14,16 @@ public class SimpleRestController {
         return "My Application";
     }
 
+    // expose new endpoint for "learning"
+    @GetMapping("/learning")
+    public String getLearningGoals() {
+        return "java module";
+    }
+
+    // expose new endpoint for "gaming"
+    @GetMapping("/gaming")
+    public String getDailyLevel() {
+        return "complate is level gaming day";
+    }
+
 }
